@@ -18,6 +18,7 @@ img {
 }
 .contenedor{
     max-width: 120rem;
+    width: 95%;
     margin: 0 auto 0 auto;   
 }
 h1 {
@@ -64,6 +65,14 @@ h4 {
     margin-top: 3rem;
     text-align: center;
     border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+        flex: 0 0 auto;
+    }
 }
 .boton:hover{
     cursor: pointer;
@@ -92,6 +101,12 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenido-header{
+        text-align: left;
+    }
 }
 .contenido-header h1{
     color: white;
@@ -101,44 +116,63 @@ h4 {
     text-transform: uppercase;
 }
 .barra{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 3rem;
+}
+@media (min-width: 768px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 .navegacion a{
     color: white;
     text-decoration: none;
-    font-size: 1.8rem;
-    margin-right: 2rem;
+    font-size: 2.2rem;
+    display: block;
+}
+@media (min-width: 768px) {
+    .navegacion a{
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type{
+        margin-right: 0;
+    }
 }
 .navegacion a:hover{
     color: #71B100;
 }
-.navegacion a:last-of-type{
-    margin-right: 0;
-}
 
 /* Iconos Nosotros */
-.iconos-nosotros{
-    display: flex;
-    justify-content: space-between;
-}
-.icono{
-    flex-basis: calc(33.3% - 1rem);
+@media (min-width: 768px) {
+    .iconos-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+    .icono{
+        flex-basis: calc(33.3% - 1rem);
+    }
 }
 
 /* Anuncios */
-.contenedor-anuncio{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+@media (min-width: 768px) {
+    .contenedor-anuncio{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 .anuncio{
-    flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #B5B5B5;
     background-color: #F5F5F5;
     margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .anuncio{
+        flex: 0 0 calc(33.3% - 1rem);
+    }
 }
 .contenido-anuncio{
     padding: 2rem;
@@ -180,7 +214,7 @@ h4 {
     align-items: center;
 }
 .contenido-contacto{
-    flex: 1;
+    flex: 0 0 95%;
     color: white;
 }
 .contenido-contacto p{
@@ -188,20 +222,26 @@ h4 {
 }
 
 /* Seccion Inferior */
-.seccion-inferior{
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) {
+    .seccion-inferior{
+        display: flex;
+        justify-content: space-between;
+    }
+    .seccion-inferior .blog{
+        flex-basis: 60%;
+    }
+    .seccion-inferior .testimoniales{
+        flex-basis: calc(40% - 2rem);
+    }   
 }
-.seccion-inferior .blog{
-    flex-basis: 60%;
-}
-.seccion-inferior .testimoniales{
-    flex-basis: calc(40% - 2rem);
-}   
 .entrada-blog{
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .entrada-blog{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 .entrada-blog .imagen{
     flex-basis: 40%;
@@ -260,10 +300,23 @@ h4 {
     background-color: #333333;
     margin: 0;
 }
+.site-footer nav{
+    display: none;
+}
+@media (min-width: 768px) {
+    .site-footer nav{
+        display: block;
+    }
+}
 .contenido-footer{
     padding: 3rem 0;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenido-footer{
+        display: flex;
+        justify-content: space-between;
+    }   
 }
 .copyrigth{
     margin: 0;
@@ -272,10 +325,12 @@ h4 {
 
 /* PAGINAS INTERNAS */
 /* Nosotros */
-.contenido-nosotros{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+@media (min-width: 768px) {
+    .contenido-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
 }
 .texto-nosotros blockquote{
     font-weight: 900;
