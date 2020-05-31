@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienes Raíces</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/styless.css">
 </head>
 <body>
     <header class="site-header inicio">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="/">
+                <a href="./index.html">
                     <img src="img/logo.svg" alt="Logotipo de Bienes Raíces">
                 </a>
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+                <nav id="navegacion" class="navegacion">
+                    <a href="./views/nosotros.html">Nosotros</a>
+                    <a href="./views/anuncios.html">Anuncios</a>
+                    <a href="./views/blog.html">Blog</a>
+                    <a href="./views/contacto.html">Contacto</a>
                 </nav>
             </div>
             <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
@@ -69,7 +74,7 @@
                             <p>4</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                    <a href="./views/anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
                 </div>
             </div>
             <div class="anuncio">
@@ -92,7 +97,7 @@
                             <p>4</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                    <a href="./views/anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
                 </div>
             </div>
             <div class="anuncio">
@@ -115,19 +120,19 @@
                             <p>4</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                    <a href="./views/anuncio.html" class="boton boton-amarillo d-block">Ver Propiedad</a>
                 </div> <!-- contenido-anuncio -->
             </div> <!-- anuncio -->
         </div> <!-- contenedor-anuncio -->
         <div class="ver-todas">
-            <a href="anuncios.html" class="boton boton-verde">Ver Todas</a>
+            <a href="./views/anuncios.html" class="boton boton-verde">Ver Todas</a>
         </div>
     </main>
     <section class="imagen-contacto">
         <div class="contenedor contenido-contacto">
             <h2>Encuentra la Casa de tus Sueños</h2>
             <p>Llena el formulario de contacto y un asesor se pondrá en contacto a la brevedad</p>
-            <a href="contacto.html" class="boton boton-amarillo">Contáctanos</a>
+            <a href="./views/contacto.html" class="boton boton-amarillo">Contáctanos</a>
         </div>
     </section>
     <div class="seccion-inferior contenedor seccion ">
@@ -138,7 +143,7 @@
                     <img src="img/blog1.jpg" alt="Imagen del Blog 1">
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="./views/entrada.html">
                         <h4>Terraza en el Techo de tu Casa</h4>
                     </a>
                     <p>Escrito el: <span>05/04/2020</span> por: <span>Admin</span></p>
@@ -150,7 +155,7 @@
                     <img src="img/blog2.jpg" alt="Imagen del Blog 2">
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="./views/entrada.html">
                         <h4>Guía para la Decoración de tu Hogar</h4>
                     </a>
                     <p>Escrito el: <span>05/04/2020</span> por: <span>Admin</span></p>
@@ -171,10 +176,10 @@
     <footer class="site-footer seccion">
         <div class="contenedor contenido-footer">
             <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="./views/nosotros.html">Nosotros</a>
+                <a href="./views/anuncios.html">Anuncios</a>
+                <a href="./views/blog.html">Blog</a>
+                <a href="./views/contacto.html">Contacto</a>
             </nav>
             <p class="copyrigth">Todos los Derechos Reservados 2020 &copy; </p>
         </div>
